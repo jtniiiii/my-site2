@@ -1,0 +1,139 @@
+/* В artical p не прижимается к низу, хотя все свойства для этого есть. */
+* {
+	margin: 0;
+}
+
+header {
+	display: grid;
+	grid-template-columns: auto 1fr 1fr auto;
+	gap: 20px;
+	padding: 10px;
+	background-color: #54A94C;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3F9338;
+	border-radius: 10px;
+}
+
+h1 {
+	grid-column: 2 / 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3F9338;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+.user {
+	grid-column: 4 / 5;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px;
+}
+
+.user-button {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #3F9338;
+	border-radius: 10px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding: 20px 10px 20px 10px;
+	background-color: #78FF6C;
+}
+
+.search-contener {
+	grid-column: 2 / 3;
+	display: flex;
+	background-color: #54A94C;
+	border-radius: 10px;
+}
+
+.search-button {
+	background-color: #54A94C;
+	border: 0;
+	border-radius: 10px;
+}
+
+.search-input {
+	width: auto;
+	display: flex;
+	justify-content: flex-start;
+	background-color: #54A94C;
+	padding: 0;
+	border: 0;
+	border-radius: 10px;
+}
+
+.news-contener {
+	grid-column: 1 / 4;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+article {
+	height: auto;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+article a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #000000;
+	text-decoration: none;
+}
+
+.responsive-img {
+	max-width: 100%;
+}
+
+article a h3 {
+	max-width: 210px;
+	background-color: #54A94C;
+	margin: 10px 0 10px 0;
+	padding: 0 0 0 5px;
+	border-radius: 0 10px 10px 0;
+}
+
+article a p {
+	background-color: #54A94C;
+	padding: 5px;
+	border-radius: 0 0 10px 10px;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	background-color: #54A94C;
+	padding: 10px;
+}
+
+.footer-item {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 10px 20px;
+}
+
+.footer-item a {
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #000000;
+}
+
+.footer-img {
+	display: flex;
+}
