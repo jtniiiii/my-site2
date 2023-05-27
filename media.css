@@ -230,9 +230,9 @@
 
 	article {
 		height: auto;
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: space-between;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
 		background-color: #FFFFFF;
 		font-size: 16px;
 		border-radius: 10px;

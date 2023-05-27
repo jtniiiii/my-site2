@@ -3,6 +3,12 @@
 	margin: 0;
 }
 
+.page-container {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
 header {
 	display: grid;
 	grid-template-columns: auto 1fr 1fr auto;
@@ -24,6 +30,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 34px;
 	background-color: #3F9338;
 	margin: 15px;
 	border-radius: 10px;
@@ -40,23 +47,28 @@ h1 {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+	font-size: 20px;
 	background-color: #3F9338;
 	border-radius: 10px;
+	padding: 3px;
 }
 
 main {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto 1fr;
 	gap: 20px;
 	padding: 20px 10px 20px 10px;
 	background-color: #78FF6C;
 }
 
 .search-contener {
+	max-height: 45px;
 	grid-column: 2 / 3;
 	display: flex;
 	background-color: #54A94C;
 	border-radius: 10px;
+	padding: 3px;
 }
 
 .search-button {
@@ -66,9 +78,8 @@ main {
 }
 
 .search-input {
-	width: auto;
-	display: flex;
-	justify-content: flex-start;
+	width: 100%;
+	font-size: 25px;
 	background-color: #54A94C;
 	padding: 0;
 	border: 0;
@@ -83,21 +94,21 @@ main {
 }
 
 article {
-	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-color: #FFFFFF;
 	border-radius: 10px;
 }
 
 article a {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	color: #000000;
 	text-decoration: none;
 }
 
 .responsive-img {
 	max-width: 100%;
+	min-width: 100%;
 }
 
 article a h3 {
@@ -112,6 +123,10 @@ article a p {
 	background-color: #54A94C;
 	padding: 5px;
 	border-radius: 0 0 10px 10px;
+}
+
+.spacer {
+	grid-column: 1 / 4;
 }
 
 footer {
